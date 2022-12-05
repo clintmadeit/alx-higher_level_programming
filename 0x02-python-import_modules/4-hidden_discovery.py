@@ -1,9 +1,7 @@
-import sys
-import hidden_4 as hidden
-
-if __name__ != "__main__":
-    exit()
-
-for name in dir(hidden):
-    if name[0:2] != "__":
-        print(name)
+#!/usr/bin/python3
+if __name__ == "__main__":
+    from hidden_4 import *
+    names = dir()
+    for i in range(0, len(names)):
+        if names[i][0:2] != "__":
+            print("{}".format(names[i]))
