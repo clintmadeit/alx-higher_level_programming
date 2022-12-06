@@ -1,6 +1,6 @@
 /*
  * File: 13-is_palindrome.c
- * Auth: Karimi Yvonne
+ * Auth: Johnclinton Luseno
  */
 
 #include "lists.h"
