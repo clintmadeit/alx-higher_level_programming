@@ -1,14 +1,10 @@
 #!/usr/bin/python3
-
-"""This module contains LockedClass."""
+"""This defines a locked class"""
 
 
 class LockedClass:
-    """A LockedClass."""
+    """
+    Only allows instatiation of an attribute called first_name
+    """
 
-    def __setattr__(self, __name, __value):
-        """Controls dynamic attribute setting."""
-        if __name != 'first_name':
-            raise AttributeError("'LockedClass' object has" +
-                                 " no attribute '{}'".format(__name))
-        object.__setattr__(self, __name, __value)
+    __slots__ = ["first_name"]
