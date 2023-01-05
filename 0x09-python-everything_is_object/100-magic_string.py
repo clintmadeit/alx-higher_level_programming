@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-n = None
 def magic_string():
-    global n; n = 0 if n is None else n + 1
-    return 'Best School' + ', Best School' * n
+    magic_string.count = getattr(magic_string, 'count', 0) + 1
+    return ", ".join(["BestSchool" for i in range(magic_string.count)])
