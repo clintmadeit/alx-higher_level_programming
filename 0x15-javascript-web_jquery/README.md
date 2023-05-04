@@ -1,1 +1,1 @@
-JQuery start with AJAX
+# Solutions to tasks on JavaScript - Web jQuery
